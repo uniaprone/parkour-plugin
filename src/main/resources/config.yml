@@ -1,0 +1,60 @@
+# 路径选区插件配置
+
+# 语言设置
+language: "zh_CN"
+
+# 选区工具类型
+selection-tool: "STICK"
+
+# 数据库设置
+database:
+  # SQLite 数据库文件路径（相对于插件数据文件夹）
+  file: "data.db"
+  # 连接池设置
+  pool-size: 5
+  # 连接超时（毫秒）
+  connection-timeout: 30000
+
+# 粒子效果设置
+particles:
+  # 粒子类型
+  type: "HAPPY_VILLAGER"
+  # 粒子数量
+  count: 1
+  # 粒子显示范围（格）
+  range: 50
+  # 更新频率（tick）
+  update-interval: 10
+
+# 进度跟踪设置
+progress:
+  # ActionBar 更新频率（毫秒）
+  actionbar-interval: 100
+  # 自动开始检测范围（格）
+  auto-start-range: 5
+  # 完成后的清理延迟（tick）
+  cleanup-delay: 100
+
+# 奖励设置
+rewards:
+  # 每日重置时间（24小时制）
+  daily-reset-hour: 0
+  daily-reset-minute: 0
+  # 奖励命令执行超时（秒）
+  command-timeout: 10
+
+# 存储设置
+storage:
+  # 自动保存间隔（分钟，0为禁用）
+  auto-save: 5
+  # 最大选区数量
+  max-selections: 100
+  # 最大选区集数量
+  max-paths: 50
+
+# 调试设置
+debug:
+  # 启用调试模式
+  enabled: false
+  # 调试级别（INFO, DEBUG, TRACE）
+  level: "INFO"

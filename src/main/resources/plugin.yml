@@ -1,0 +1,27 @@
+name: PathSelection
+version: '1.0-SNAPSHOT'
+main: org.zzq.pathSelection.PathSelection
+api-version: '1.21'
+description: 路径选区插件
+author: [ zzq ]
+website: yourwebsite.com
+
+commands:
+  pathselection:
+    description: 路径选区主命令
+    aliases: [ps]
+    usage: /pathselection <subcommand>
+  ps:
+    description: 路径选区命令别名
+    usage: /ps <subcommand>
+
+permissions:
+  pathselection.pathselect:
+    description: 允许使用路径选区功能
+    default: op
+  pathselection.reload:
+    description: 允许重载路径选区插件
+    default: op
+  pathselection.admin:
+    description: 路径选区管理权限
+    default: op

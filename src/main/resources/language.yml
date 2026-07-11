@@ -1,0 +1,165 @@
+# language.yml
+# 路径选区插件语言文件
+# 新增消息
+plugin-reloaded: "&a插件重载完成! 已加载 {count} 个选区集"
+reload-success: "&a路径选区插件重载成功!"
+reload-failed: "&c插件重载失败: {error}"
+reload-no-permission: "&c你没有重载插件的权限!"
+
+# 时间格式消息
+time-format: "&e{minutes}分{seconds}秒{milliseconds}毫秒"
+time-format-simple: "&e{seconds}.{milliseconds}秒"
+
+# 排行榜消息
+leaderboard-daily-title: "&6=== {name} 每日排行榜 ({date}) ==="
+leaderboard-historical-title: "&6=== {name} 历史排行榜 ==="
+leaderboard-entry: "&a#{rank} &e{player} &7- &a{time} &7- &f{date}"
+leaderboard-empty: "&e暂无排行榜数据"
+
+# 奖励消息
+reward-added: "&a已为路径 &e{name} &a添加奖励: &f{command}"
+reward-add-failed: "&c添加奖励失败!"
+reward-empty: "&e路径 &6{name} &e暂无奖励配置"
+reward-list-header: "&6=== {name} 奖励列表 ==="
+reward-list-item: "&a#{index} &f{command}"
+reward-claimed: "&a奖励已发放!"
+reward-already-claimed: "&c你今天已经领取过这个路径的奖励了!"
+reward-no-rewards: "&e这个路径没有配置奖励"
+
+# 帮助消息
+help-header: "&6=== 路径选区插件帮助 ==="
+help-create: "&e/ps create <名称> &7- 创建新的选区集"
+help-finish: "&e/ps finish &7- 结束当前选区集创建并保存"
+help-edit: "&e/ps edit <名称> &7- 开始编辑选区集"
+help-edit-create: "&e/ps edit <名称> create &7- 完成当前选区并添加到选区集"
+help-edit-delete: "&e/ps edit <名称> delete <索引> &7- 从选区集中删除选区"
+help-edit-finish: "&e/ps edit <名称> finish &7- 结束编辑并保存更改"
+help-unload: "&e/ps unload <名称> &7- 卸载选区集"
+help-deletepath: "&e/ps deletepath <名称> &7- 删除选区集（从配置中完全删除）"
+help-list: "&e/ps list &7- 列出所有已加载的选区集"
+help-tool: "&e/ps tool <物品> &7- 设置选区工具"
+help-start: "&e/ps start <名称> &7- 开始路径计时"
+help-cancel: "&e/ps cancel &7- 取消当前计时"
+help-progress: "&e/ps progress &7- 查看当前进度"
+help-leaderboard: "&e/ps leaderboard <名称> <daily|historical> &7- 查看排行榜"
+help-reload: "&e/ps reload &7- 重载插件配置(需要 pathselection.reload 权限)"
+help-reward: "&e/ps reward add <名称> <命令> &7- 添加奖励(需要 pathselection.admin 权限)"
+
+# 控制台消息
+console-only: "&c此命令只能在控制台执行!"
+player-only: "&c只有玩家才能使用此命令!"
+invalid-type: "&c无效的类型，请使用 daily 或 historical"
+
+# PlaceholderAPI 占位符说明
+placeholder-daily: "&7%pathselection_路径名_daily_排名_字段% &f- 每日排行榜"
+placeholder-historical: "&7%pathselection_路径名_historical_排名_字段% &f- 历史排行榜"
+placeholder-player: "&7%pathselection_路径名_player_字段% &f- 玩家记录"
+
+# 字段说明
+field-player: "玩家名"
+field-time: "格式化时间"
+field-time-simple: "简化时间"
+field-timestamp: "时间戳"
+field-milliseconds: "毫秒数"
+field-date: "完成日期"
+# 通用消息
+prefix: "&6[路径选区]&r "
+no-permission: "&c你没有使用路径选区的权限!"
+invalid-usage: "&c用法: {usage}"
+invalid-material: "&c无效的物品名称: {material}"
+not-editing: "&c你还没有开始编辑任何选区集!"
+not-found: "&c未找到名为 {name} 的选区集!"
+already-exists: "&c名称 {name} 已存在!"
+in-use: "&c有玩家正在编辑此选区集，无法操作!"
+empty-selection: "&c请先使用选区工具选择有效的起始点和结束点!"
+empty-path: "&c选区集为空! 请先添加至少一个选区。"
+
+# 选区操作消息
+start-point-set: "&a已设置起始点: {location}"
+end-point-set: "&a已设置结束点: {location}"
+region-added: "&a选区已添加到选区集! 当前共有 &e{count}&a 个选区。"
+region-deleted: "&a已删除选区 &e#{index}&a。当前剩余 &e{count}&a 个选区。"
+invalid-index: "&c无效的索引: {index}"
+
+# 选区集管理消息
+path-created: "&a已开始创建新的选区集: &e{name}"
+path-edit-started: "&a已开始编辑选区集: &e{name}"
+path-saved: "&a选区集已保存: &e{name}&a (包含 {count} 个选区)"
+path-unloaded: "&a已卸载选区集: &e{name}"
+path-deleted: "&a已删除选区集: &e{name}&a (从配置中完全删除)"
+path-loaded: "&a已加载选区集: &e{name}&a (包含 {count} 个选区)"
+
+# 工具设置消息
+tool-set: "&a选区工具已设置为: &e{tool}"
+
+# 进度跟踪消息
+progress-started: "&a已开始路径计时: &e{name}"
+progress-auto-started: "&a自动开始路径: &e{name}&a! 请按顺序通过所有选区。"
+progress-cancelled: "&e已取消路径计时。"
+progress-completed: "&a恭喜! 你完成了路径: &e{name}"
+progress-updated: "&a进度更新! 已通过第 {current}/{total} 个选区"
+
+# 列表消息
+list-header: "&6=== 已加载的选区集 ==="
+list-empty: "&e没有已加载的选区集。"
+list-item: "&a- {name} &7({count} 个选区)"
+
+# 进度显示消息
+progress-header: "&6=== 当前路径进度 ==="
+progress-none: "&e你没有进行中的路径计时。"
+progress-path: "&a路径: &e{name}"
+progress-index: "&a进度: &e{current}/{total}"
+progress-time: "&a用时: &e{time}秒"
+
+# ActionBar 消息
+actionbar-progress: "&b路径: &6{name} &b- 进度: &e{current}/{total} &b- 时间: &e{time}秒"
+actionbar-completed: "&a路径完成! &6{name} &a- 时间: &e{time}秒"
+
+# 提示消息
+hint-use-tool: "&7使用选区工具选择区域，然后使用 &f{command} &7添加选区"
+hint-finish-creation: "&7完成所有选区后，使用 &f/ps finish &7保存选区集"
+hint-cancel-timer: "&7使用 &f/ps cancel &7可以取消计时。"
+hint-start-manual: "&7使用 &f/ps start <路径名> &7开始计时，或进入路径的第一个选区自动开始。"
+# 插件状态消息
+plugin-enabled: "&a路径选区插件已启用! 已加载 {count} 个选区集"
+plugin-disabled: "&c路径选区插件已禁用!"
+config-error: "&c创建选区配置文件时出错: {error}"
+config-save-error: "&c保存配置文件时出错: {error}"
+# 奖励相关消息
+reward-partial-failed: "&c部分奖励发放失败，请联系管理员"
+reward-removed: "&a已删除路径 &e{name} &a的第 &e{index} &a个奖励"
+reward-cleared: "&a已清空路径 &e{name} &a的所有奖励"
+
+# 帮助消息
+help-reward-add: "&e/ps reward add <路径名> <命令> &7- 添加奖励命令"
+help-reward-list: "&e/ps reward list <路径名> &7- 查看奖励列表"
+help-reward-remove: "&e/ps reward remove <路径名> <索引> &7- 删除奖励"
+help-reward-clear: "&e/ps reward clear <路径名> &7- 清空所有奖励"
+
+# 其他消息
+reward-remove-failed: "&c删除奖励失败!"
+
+# 删除记录相关消息
+records-deleted: "&a删除完成! 已删除 {count} 条{target}"
+no-records-found: "&e未找到{target}"
+invalid-date: "&c无效的日期格式: {date}&c，请使用 YYYY-MM-DD 格式"
+
+# 权限消息
+no-permission-admin: "&c只有管理员才能使用此命令!"
+
+# 错误消息
+player-not-found: "&c未找到玩家: {player}&c，请检查玩家名是否正确"
+
+# 控制台相关消息
+console-need-player: "&c控制台使用必须指定玩家参数!"
+console-cancelled: "&a已为玩家 &e{player} &a取消路径计时: &e{name}&a (已进行: {time})"
+
+# 权限消息
+no-permission-other: "&c你没有取消其他玩家计时的权限!"
+
+# 取消计时消息
+progress-cancelled-other: "&e已取消玩家 &6{player} &e的路径计时: &6{name}&e (已进行: {time})"
+progress-cancelled-console: "&a控制台已取消玩家 &e{player} &a的路径计时: &e{name}&a (已进行: {time})"
+progress-cancelled-by-admin: "&e管理员 &6{admin} &e取消了你的路径计时: &6{name}"
+progress-none-other: "&e玩家 &6{player} &e没有进行中的路径计时"
+cancelled-time: "&7已进行时间: &f{time}"
